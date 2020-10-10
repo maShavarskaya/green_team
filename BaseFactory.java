@@ -1,1 +1,2 @@
-
+// creareCircle() : void
+// creareTriangle() : void
