@@ -1,6 +1,6 @@
 public class WhiteFactory extends BaseFactory {  // WhiteFactory from BaseFactory
     @Override    // WhiteCircle (radius)
-    WhiteCircle createCircle(int radius) {
+    WhiteCircle createCircle(double radius) {
         return new WhiteCircle(radius);
     }
 
