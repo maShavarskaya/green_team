@@ -10,8 +10,8 @@ public class BlackFactory extends BaseFactory {
     }
 
     @Override
-    public Triangle createTriangle(double a, double b, double c) {
-        return new BlackTriangle(a,b,c);
+    public Triangle createTriangle(int x1, int y1, int x2, int y2, int x3, int y3) {
+        return new BlackTriangle(x1, y1, x2, y2, x3, y3);
     }
 
     public BlackFactory() {
@@ -23,4 +23,3 @@ public class BlackFactory extends BaseFactory {
         return this;
     }
 }
-
