@@ -1,4 +1,5 @@
-//getFactory: BaseFactory
-public abstract class AbstractFactory {
-    abstract BaseFactory fetFactory(String factoryType);
+package com.company;
+
+public interface AbstractFactory {
+    BaseFactory getFactory();
 }
