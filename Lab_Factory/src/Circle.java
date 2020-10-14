@@ -1,7 +1,8 @@
+public interface Circle {
+    double x = 0;
+    double y = 0;
+    double radius =1;
 
-public class Circle implement Shape{
-    @Override
-    public void draw(){
-        System.out.println("Inside Circle: :draw() method.";
-    }
+    double countArea();
+
 }
