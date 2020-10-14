@@ -1,5 +1,5 @@
 package com.company;
 
-public abstract interface AbstractFactory {
+public interface AbstractFactory {
     BaseFactory getFactory();
 }
