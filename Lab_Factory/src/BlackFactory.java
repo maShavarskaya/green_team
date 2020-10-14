@@ -5,8 +5,8 @@ public class BlackFactory extends BaseFactory {
     private final String message ="This is Black Factory";
 
     @Override
-    public Circle createCircle(double x, double y, double radius) {
-        return new BlackCircle(x,y,radius);
+    public Circle createCircle(double radius) {
+        return new BlackCircle(radius);
     }
 
     @Override
@@ -23,3 +23,4 @@ public class BlackFactory extends BaseFactory {
         return this;
     }
 }
+
