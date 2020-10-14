@@ -1,16 +1,25 @@
-public class WhiteFactory extends BaseFactory {  // WhiteFactory from BaseFactory
-    @Override    // WhiteCircle (radius)
-    WhiteCircle createCircle(int radius) {
-        return new WhiteCircle(radius);
+package com.company;
+
+public class WhiteFactory extends BaseFactory { // WhiteFactory
+
+    private final String message ="This is White Factory";
+
+    public WhiteFactory() {
+        System.out.println(message);
+    }
+			// Circle
+    @Override
+    public Circle createCircle(double x, double y, double radius) {
+        return new WhiteCircle(x,y,radius);
+    }
+			// Triangle
+    @Override
+    public Triangle createTriangle(double a, double b, double c) {
+        return new WhiteTriangle(a,b,c);
     }
 
-    @Override   // WhiteTriangle ( (x1,y1); (x2,y2); (x3,y3) )
-    Triangle createTriangle(int x1, int y1, int x2, int y2, int x3, int y3) {
-        return new WhiteTriangle(x1, y1, x2, y2, x3, y3);
-    }
-                    // WhiteFactory
     @Override
-    public String toString() {
-        return "WhiteFactory";
+    public BaseFactory getFactory() {
+        return this;
     }
 }
